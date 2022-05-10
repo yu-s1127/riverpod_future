@@ -30,7 +30,7 @@ void main() {
   ''';
 
   test('fromJson', () async {
-    var data = json.decode(jsonData);
+    var data = jsonDecode(jsonData);
     PostalCode result = PostalCode.fromJson(data);
 
     expect(result.code, '1000014');
